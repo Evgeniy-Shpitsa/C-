@@ -68,7 +68,7 @@ while (count <= e)
     }
     else 
     {
-        Console.Write(" ");
+        Console.Write(",");
         count = count + 1;
     }    
 }
