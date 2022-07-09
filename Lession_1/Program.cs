@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 Console.Write("введите первое число ");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите второе число ");
@@ -60,9 +57,9 @@ else
 }
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 Console.WriteLine("введите число ");
-int d = Convert.ToInt32(Console.ReadLine());
+int e = Convert.ToInt32(Console.ReadLine());
 int count = 1;
-while (count <= d)
+while (count <= e)
 {
     if (count%2 == 0)
     {
