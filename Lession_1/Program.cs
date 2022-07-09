@@ -32,13 +32,13 @@ if (a > b)
 {
     if (a > c)
     {
-        Console.Write(x);
+        Console.Write(a);
         Console.Write(" Наибольшее число");
     }
 }
 if (b > c)
 {
-    Console.Write(y);
+    Console.Write(b);
     Console.Write(" Наибольшее число");
 }
 else
@@ -48,3 +48,30 @@ else
 }
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+Console.WriteLine("введите число ");
+int d = Convert.ToInt32(Console.ReadLine());
+if (d%2 == 0)
+{
+    Console.Write("Четное число");
+}
+else 
+{
+    Console.Write("Нечетное число");
+}
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+Console.WriteLine("введите число ");
+int d = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+while (count <= d)
+{
+    if (count%2 == 0)
+    {
+        Console.Write(count);
+        count = count + 1;
+    }
+    else 
+    {
+        Console.Write(" ");
+        count = count + 1;
+    }    
+}
