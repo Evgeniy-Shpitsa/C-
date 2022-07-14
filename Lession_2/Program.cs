@@ -1,27 +1,32 @@
 ﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-Console.Write("введите трехзначное число ");
-int x = Convert.ToInt32(Console.ReadLine());
-int y = x%100;
-Console.Write("Второе число ");
-Console.Write(y/10);
+int second (int num)
+{
+    int x = num%100;
+    return (x/10);
+}
+Console.Write(second(997));
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-Console.Write("введите число ");
-int a = Convert.ToInt32(Console.ReadLine());
-if (a == 6)
+
+string weekend (int num)
 {
-    Console.Write("Да");
+    if (num == 6)
+    {
+        return "Выходной день";
+    }
+    else if (num == 7)
+    {
+        return "Выходной день";
+    }
+    else
+    {
+        return "Рабочий день";
+    }
 }
-else if (a == 7)
-{
-    Console.Write("Да");
-}
-else
-{
-    Console.Write("Нет");
-}
+Console.Write(weekend(7));
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
 Console.Write("введите число ");
 int b = Convert.ToInt32(Console.ReadLine());
 if (b/100 == 0)
