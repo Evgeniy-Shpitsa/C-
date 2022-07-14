@@ -26,33 +26,18 @@ string weekend (int num)
 Console.Write(weekend(7));
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
-Console.Write("введите число ");
-int b = Convert.ToInt32(Console.ReadLine());
-if (b/100 == 0)
+string third (int num)
 {
-    Console.Write("Третьей цифры нет");
-}
-else if (b/100 > 0 && b/100 < 10)
+if (num/100 == 0)
 {
-    Console.Write("Третье число ");
-    Console.Write(b%10);
+    return "третьей цифры нет";
 }
-else if (b/100 > 10 && b/100 < 100)
+else
 {
-    int c = b/10;
-    Console.Write("Третье число ");
-    Console.Write(c%10);
+    string s = num.ToString();
+    char[] sym = s.ToCharArray();
+    string x = Convert.ToString(sym[2]);
+    return x;
 }
-else if (b/100 > 100 && b/100 < 1000)
-{
-    int c = b/100;
-    Console.Write("Третье число ");
-    Console.Write(c%10);
 }
-else if (b/100 > 1000 && b/100 < 10000)
-{
-    int c = b/1000;
-    Console.Write("Третье число ");
-    Console.Write(c%10);
-}
+Console.Write(third(1289));
