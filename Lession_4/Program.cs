@@ -6,7 +6,7 @@ int b = Convert.ToInt32(Console.ReadLine());
 int sum = a;
 for (int i = 1; i<b; i++)
     {
-        summ = sum * a;
+        sum = sum * a;
     }
 Console.WriteLine(sum);
 
