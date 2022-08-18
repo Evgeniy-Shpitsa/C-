@@ -31,7 +31,7 @@ void FillArray(double [,] array)
 
 }
 FillArray(array);
-PrintArrayRazm(array);*/
+PrintArrayRazm(array);
 
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента либо значение элемента в двумерном массиве, и возвращает значение либо индекс этого элемента или же указание, что такого элемента нет.
 Console.Write("Введите кол-во строк массива: ");
@@ -76,7 +76,7 @@ static void searchnumber(int[,] matr)
         }
       }
     }
- try
+try
  {
     FillArray(array);
     PrintArray(array);
@@ -87,7 +87,7 @@ static void searchnumber(int[,] matr)
     Console.WriteLine("Это про индексы");
  }
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-/*Console.Write("Введите кол-во строк массива: ");
+Console.Write("Введите кол-во строк массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите кол-во столбцов массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
